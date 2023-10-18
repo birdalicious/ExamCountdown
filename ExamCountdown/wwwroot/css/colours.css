@@ -1,0 +1,43 @@
+﻿.Red {
+    --exam-background: #F44336;
+}
+
+.Pink {
+    --exam-background: #E91E63;
+}
+
+.Purple {
+    --exam-background: #9C27B0;
+}
+
+.DeepPurple {
+    --exam-background: #673AB7;
+}
+
+.Indigo {
+    --exam-background: #3F51B5;
+}
+
+.Blue {
+    --exam-background: #2196F3;
+}
+
+.LightBlue {
+    --exam-background: #03A9F4;
+}
+
+.Cyan {
+    --exam-background: #00BCD4;
+}
+
+.Teal {
+    --exam-background: #009688;
+}
+
+.Green {
+    --exam-background: #4CAF50;
+}
+
+.LightGreen {
+    --exam-background: #8BC34A;
+}

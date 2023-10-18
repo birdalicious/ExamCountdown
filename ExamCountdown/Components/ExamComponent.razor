@@ -1,0 +1,18 @@
+﻿<div class="exam-listitem-date @Exam.Colour" @onclick=@OnClick>
+    <DateComponent DateTime=@Exam.StartDateTime />
+</div>
+<div class="exam-listitem-mainbody @Exam.Colour">
+    <div class="exam-mainbody-heading">@Exam.Subject</div>
+    <div class="exam-mainbody-subheading">@Exam.SubHeading</div>
+</div>
+<div class="exam-listitem-end @Exam.Colour">
+    <TimeTillComponent TimeTill=@Exam.TimeTillStart />
+</div>
+
+@code {
+    [Parameter]
+    public Exam Exam { get; set; } = new("Blank", "Blank", DateTime.Now, TimeSpan.FromSeconds(0));
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+}

@@ -1,0 +1,9 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<div class="examoverview-grid">
+    @foreach (var exam in Exams) {
+        <ExamComponent Exam=@exam OnClick="() => Test(exam)"/>
+    }
+</div>
