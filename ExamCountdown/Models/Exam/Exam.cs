@@ -3,7 +3,7 @@
     public class Exam
     {
         public string Subject { get; set; }
-        public string SubHeading { get; set; }
+        public string Subheading { get; set; }
         public DateTime StartDateTime { get; set; }
         public TimeSpan Duration { get; set; }
         public Colour Colour { get; set; }
@@ -26,7 +26,7 @@
         public Exam(string subject, string module, DateTime startDateTime, TimeSpan duration, Colour colour = Colour.None)
         {
             Subject = subject;
-            SubHeading = module;
+            Subheading = module;
             StartDateTime = startDateTime;
             Duration = duration;
             Colour = colour;

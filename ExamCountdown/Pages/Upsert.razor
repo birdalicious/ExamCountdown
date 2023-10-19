@@ -1,12 +1,14 @@
-﻿@page "/details"
+﻿@page "/add"
+@page "/edit"
 
 <div>
-    <div>@Exam.Subject</div>
-    <div>@Exam.Subheading</div>
+    <MatStringField Label="Title" @bind-Value="@Exam.Subject"></MatStringField>
+    <MatStringField Label="Subheading" @bind-Value="@Exam.Subheading"></MatStringField>
 </div>
 <div>
     <div>
-        @Exam.StartDateTime
+        <RadzenDatePicker @ref="@DateObj" Inline="true" ShowTimeOkButton="false" Min="DateTime.Now.Date" @bind-Value=@Exam.StartDateTime ShowTime="true" ShowSeconds="false" DateFormat="MM/dd/yyyy HH:mm" />
+         <div>@Exam.StartDateTime</div>
     </div>
     <div>
         <div>

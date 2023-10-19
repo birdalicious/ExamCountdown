@@ -1,7 +1,7 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <MatThemeProvider Theme="@theme">
+    <MatThemeProvider>
         <MatAppBarContainer Id="content">
             <MatAppBar Fixed="true">
                 <MatAppBarRow>
@@ -35,15 +35,8 @@
 </div>
 
 @code {
-    private MatTheme theme = new MatTheme
-        {
-            Primary = "#ff6d00",
-            Secondary = "#ffab00",
-            Surface = "#ffffff"
-        };
-
     [Inject]
-    public INavigationService NavigationService { get; set; }
+    public INavigationService NavigationService { get; set; } = null!;
 
     public bool IsOnHomeScreen => NavigationService.RelativeUri is "" or "/";
 }
