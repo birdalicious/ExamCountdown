@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamCountdown", "ExamCountdown\ExamCountdown.csproj", "{3097A888-F0E4-4289-9766-DB9CE1C4213D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamCountdown", "ExamCountdown\ExamCountdown.csproj", "{3097A888-F0E4-4289-9766-DB9CE1C4213D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationHelper", "NavigationService\NavigationHelper.csproj", "{A5DA0311-94C5-4DBE-A2E4-59E0E84FAA07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavigationHelper", "NavigationService\NavigationHelper.csproj", "{A5DA0311-94C5-4DBE-A2E4-59E0E84FAA07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
