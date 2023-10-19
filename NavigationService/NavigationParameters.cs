@@ -11,7 +11,7 @@ namespace NavigationHelper
         {
             if (!_dictionary.TryGetValue(key, out var value))
             {
-                throw new NavigationParameterDoesNotExistExceoption();
+                throw new NavigationParameterDoesNotExistException();
             }
 
             if(value is T castValue)
