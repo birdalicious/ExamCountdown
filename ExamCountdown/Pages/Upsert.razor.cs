@@ -32,7 +32,7 @@ namespace ExamCountdown.Pages
             }
         }
 
-        private Task OpenolourDialog()
+        private Task OpenColourDialog()
         {
             return _colourDialog.ShowDialog();
         }

@@ -1,65 +1,29 @@
 ﻿@page "/add"
 @page "/edit"
 
-<div>
-    <EditForm Model="@Exam" OnValidSubmit="HandleOnValidSubmit">
+@if(Exam is null)
+{
+    <div>Loading...</div>
+} 
+else
+{
+ <div id="root">
+    <EditForm Model="Exam" OnValidSubmit="HandleOnValidSubmit">
         <DataAnnotationsValidator />
-        <MatStringField Label="Title" @bind-Value="@Exam!.Subject"></MatStringField>
-        <ValidationMessage For="@(() => Exam.Subject)" />
-        <MatStringField Label="Subheading" @bind-Value="@Exam.Subheading"></MatStringField>
-        <button type="submit">Hello</button>
+        <div id="body-container" class="@Exam.Colour" @onclick="OpenColourDialog">
+            <div id="title-container">
+                <MatStringField Label="Title" @bind-Value="Exam.Subject" />
+                <ValidationMessage For="@(() => Exam.Subject)" />
+            </div>
+            <div id="subtitle-container">
+                <MatStringField Label="Subheading" @bind-Value="Exam.Subheading" />
+            </div>
+        </div>
+        <div id="startDateTime-container">
+            @Exam.StartDateTime
+        </div>
     </EditForm>
 </div>
-<div>
-    <div>
-        <RadzenDatePicker 
-            Inline="true"
-            ShowTimeOkButton="false"
-            Min="DateTime.Now.Date"
-            @bind-Value=@Exam!.StartDateTime
-            ShowTime="true"
-            ShowSeconds="false"
-            DateFormat="MM/dd/yyyy HH:mm" />
-         <div>@Exam.StartDateTime</div>
-    </div>
-    <div>
-        <div>
-            <div>
-                @Exam.TimeTillStart.Days
-            </div>
-            <div>
-                Days
-            </div>
-        </div>
-        <div>
-            <div>
-                @Exam.TimeTillStart.Hours
-            </div>
-            <div>
-                Hours
-            </div>
-        </div>
-        <div>
-            <div>
-                @Exam.TimeTillStart.Minutes
-            </div>
-            <div>
-                Minutes
-            </div>
-        </div>
-        <div>
-            <div>
-                @Exam.TimeTillStart.Seconds
-            </div>
-            <div>
-                Seconds
-            </div>
-        </div>
-    </div>
-</div>
+}
 
-
-@Exam.Colour
-<button @onclick="OpenolourDialog">Open</button>
-
-<ColoursComponent @ref="@_colourDialog" @bind-Value="@Exam.Colour" />
+<ColoursComponent @ref="_colourDialog" @bind-Value="Exam.Colour" />
