@@ -3,6 +3,7 @@
 
 <div>
     <EditForm Model="@Exam" OnValidSubmit="HandleOnValidSubmit">
+        <DataAnnotationsValidator />
         <MatStringField Label="Title" @bind-Value="@Exam!.Subject"></MatStringField>
         <ValidationMessage For="@(() => Exam.Subject)" />
         <MatStringField Label="Subheading" @bind-Value="@Exam.Subheading"></MatStringField>
