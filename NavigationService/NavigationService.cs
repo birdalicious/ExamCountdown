@@ -35,6 +35,12 @@ namespace NavigationHelper
 
         public void NavigateBack()
         {
+            if(!_stack.HasElements)
+            {
+                InternalNavigateTo("/");
+                return;
+            }
+
             (var uri, var parameters) = _stack.Pop();
 
             InternalNavigateTo(uri, parameters);

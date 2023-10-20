@@ -1,0 +1,21 @@
+﻿@code {
+    [Inject]
+    public DialogService DialogService { get; set; } = null!;
+
+    [Parameter]
+    public Colour Value { get; set; }
+
+    [Parameter]
+    public EventCallback<Colour> ValueChanged { get; set; }
+
+    public Task ShowDialog()
+    {
+        return DialogService.OpenAsync("Pick a colour", ds =>
+            @<div id="root">
+                @foreach (var colour in Enum.GetValues<Colour>())
+                {
+                    <div class="colour-block @colour" @onclick="@(async () => {ds.Close(true); await ValueChanged.InvokeAsync(colour);})"></div>
+                }
+            </div>);
+    }
+}

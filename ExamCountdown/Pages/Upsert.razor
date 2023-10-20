@@ -2,12 +2,23 @@
 @page "/edit"
 
 <div>
-    <MatStringField Label="Title" @bind-Value="@Exam.Subject"></MatStringField>
-    <MatStringField Label="Subheading" @bind-Value="@Exam.Subheading"></MatStringField>
+    <EditForm Model="@Exam" OnValidSubmit="HandleOnValidSubmit">
+        <MatStringField Label="Title" @bind-Value="@Exam!.Subject"></MatStringField>
+        <ValidationMessage For="@(() => Exam.Subject)" />
+        <MatStringField Label="Subheading" @bind-Value="@Exam.Subheading"></MatStringField>
+        <button type="submit">Hello</button>
+    </EditForm>
 </div>
 <div>
     <div>
-        <RadzenDatePicker @ref="@DateObj" Inline="true" ShowTimeOkButton="false" Min="DateTime.Now.Date" @bind-Value=@Exam.StartDateTime ShowTime="true" ShowSeconds="false" DateFormat="MM/dd/yyyy HH:mm" />
+        <RadzenDatePicker 
+            Inline="true"
+            ShowTimeOkButton="false"
+            Min="DateTime.Now.Date"
+            @bind-Value=@Exam!.StartDateTime
+            ShowTime="true"
+            ShowSeconds="false"
+            DateFormat="MM/dd/yyyy HH:mm" />
          <div>@Exam.StartDateTime</div>
     </div>
     <div>
@@ -45,3 +56,9 @@
         </div>
     </div>
 </div>
+
+
+@Exam.Colour
+<button @onclick="OpenolourDialog">Open</button>
+
+<ColoursComponent @ref="@_colourDialog" @bind-Value="@Exam.Colour" />

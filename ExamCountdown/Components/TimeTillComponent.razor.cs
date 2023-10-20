@@ -14,7 +14,7 @@ namespace ExamCountdown.Components
 
         private (int, string) CalculateTime()
         {
-            if (TimeTill.TotalDays > 1)
+            if (TimeTill.TotalDays > 2)
             {
                 return ((int)TimeTill.TotalDays, "Days");
             }

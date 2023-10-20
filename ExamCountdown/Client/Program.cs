@@ -4,6 +4,7 @@ using NavigationHelper;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Radzen;
+using Blazored.LocalStorage;
 
 namespace ExamCountdown
 {
@@ -19,6 +20,7 @@ namespace ExamCountdown
             builder.Services.AddMatBlazor();
             builder.Services.AddRadzenComponents();
             builder.Services.AddNavigationService();
+            builder.Services.AddBlazoredLocalStorage();
 
             await builder.Build().RunAsync();
         }

@@ -10,6 +10,8 @@ namespace NavigationHelper
     {
         private List<(string, NavigationParameters)> _stack = new();
 
+        public bool HasElements => _stack.Count > 0;
+
         public void Add(string uri, NavigationParameters parameters)
         {
             _stack.Add((uri, parameters));
