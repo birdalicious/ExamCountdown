@@ -1,43 +1,161 @@
-﻿.Red {
-    --exam-background: #F44336;
+﻿.None {
+    --primary: white;
+    --primary-colour: black;
+    --secondary: white;
+    --secondary-colour: black;
+    --tertiary: black;
+    --tertiary-colour: white;
+}
+
+.Red {
+    --primary: #F44336;
+    --primary-colour: white;
+    --secondary: #D32F2F;
+    --secondary-colour: white;
+    --tertiary: #EF9A9A;
+    --tertiary-colour: black;
 }
 
 .Pink {
-    --exam-background: #E91E63;
+    --primary: #E91E63;
+    --primary-colour: white;
+    --secondary: #C2185B;
+    --secondary-colour: white;
+    --tertiary: #F48FB1;
+    --tertiary-colour: black;
 }
 
 .Purple {
-    --exam-background: #9C27B0;
+    --primary: #9C27B0;
+    --primary-colour: white;
+    --secondary: #7B1FA2;
+    --secondary-colour: white;
+    --tertiary: #CE93D8;
+    --tertiary-colour: black;
 }
 
 .DeepPurple {
-    --exam-background: #673AB7;
+    --primary: #673AB7;
+    --primary-colour: white;
+    --secondary: #512DA8;
+    --secondary-colour: white;
+    --tertiary: #B39DDB;
+    --tertiary-colour: black;
 }
 
 .Indigo {
-    --exam-background: #3F51B5;
+    --primary: #3F51B5;
+    --primary-colour: white;
+    --secondary: #303F9F;
+    --secondary-colour: white;
+    --tertiary: #9FA8DA;
+    --tertiary-colour: black;
 }
 
 .Blue {
-    --exam-background: #2196F3;
+    --primary: #2196F3;
+    --primary-colour: white;
+    --secondary: #1976D2;
+    --secondary-colour: white;
+    --tertiary: #90CAF9;
+    --tertiary-colour: black;
 }
 
 .LightBlue {
-    --exam-background: #03A9F4;
+    --primary: #03A9F4;
+    --primary-colour: white;
+    --secondary: #0288D1;
+    --secondary-colour: white;
+    --tertiary: #81D4FA;
+    --tertiary-colour: black;
 }
 
 .Cyan {
-    --exam-background: #00BCD4;
+    --primary: #00BCD4;
+    --primary-colour: white;
+    --secondary: #0097A7;
+    --secondary-colour: white;
+    --tertiary: #80DEEA;
+    --tertiary-colour: black;
 }
 
 .Teal {
-    --exam-background: #009688;
+    --primary: #009688;
+    --primary-colour: white;
+    --secondary: #00796B;
+    --secondary-colour: white;
+    --tertiary: #80CBC4;
+    --tertiary-colour: black;
 }
 
 .Green {
-    --exam-background: #4CAF50;
+    --primary: #4CAF50;
+    --primary-colour: white;
+    --secondary: #388E3C;
+    --secondary-colour: white;
+    --tertiary: #A5D6A7;
+    --tertiary-colour: black;
 }
 
 .LightGreen {
-    --exam-background: #8BC34A;
+    --primary: #8BC34A;
+    --primary-colour: white;
+    --secondary: #689F38;
+    --secondary-colour: white;
+    --tertiary: #C5E1A5;
+    --tertiary-colour: black;
+}
+
+.Lime {
+    --primary: #CDDC39;
+    --primary-colour: white;
+    --secondary: #AFB42B;
+    --secondary-colour: white;
+    --tertiary: #E6EE9C;
+    --tertiary-colour: black;
+}
+
+.Yellow {
+    --primary: #FFEB3B;
+    --primary-colour: white;
+    --secondary: #FBC02D;
+    --secondary-colour: white;
+    --tertiary: #FFF59D;
+    --tertiary-colour: black;
+}
+
+.Amber {
+    --primary: #FFC107;
+    --primary-colour: white;
+    --secondary: #FFA000;
+    --secondary-colour: white;
+    --tertiary: #FFE082;
+    --tertiary-colour: black;
+}
+
+.Orange {
+    --primary: #FF9800;
+    --primary-colour: white;
+    --secondary: #F57C00;
+    --secondary-colour: white;
+    --tertiary: #F57C00;
+    --tertiary-colour: black;
+}
+
+.DeepOrange {
+    --primary: #FF5722;
+    --primary-colour: white;
+    --secondary: #E64A19;
+    --secondary-colour: white;
+    --tertiary: #FFAB91;
+    --tertiary-colour: black;
+}
+
+.Brown {
+    --primary: #795548;
+    --primary-colour: white;
+    --secondary: #5D4037;
+    --secondary-colour: white;
+    --tertiary: #BCAAA4;
+    --tertiary-colour: black;
 }

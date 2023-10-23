@@ -13,6 +13,12 @@
         Cyan,
         Teal,
         Green,
-        LightGreen
+        LightGreen,
+        Lime,
+        Yellow,
+        Amber,
+        Orange,
+        DeepOrange,
+        Brown,
     }
 }
