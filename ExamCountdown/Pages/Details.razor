@@ -1,5 +1,11 @@
 ﻿@page "/details"
 
+@if(Exam is null)
+{
+    <div>Loading...</div>
+}
+else
+{    
 <div>
     <div>@Exam.Subject</div>
     <div>@Exam.Subheading</div>
@@ -43,3 +49,4 @@
         </div>
     </div>
 </div>
+}

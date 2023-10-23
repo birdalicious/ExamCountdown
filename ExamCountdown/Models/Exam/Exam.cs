@@ -32,7 +32,10 @@ namespace ExamCountdown.Models.Exam
             }
         }
 
-        public Exam() { }
+        public Exam() {
+            Subject = string.Empty;
+            Subheading = string.Empty; ;
+        }
 
         public Exam(string subject, string module, DateTime startDateTime, TimeSpan duration, Colour colour = Colour.None)
         {

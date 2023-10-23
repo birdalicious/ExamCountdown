@@ -5,8 +5,8 @@
     --secondary-colour: black;
     --tertiary: black;
     --tertiary-colour: white;
-    --darkest: black;
-    --darkest-colour: white;
+    --darkest: white;
+    --darkest-colour: black;
 }
 
 .Red {

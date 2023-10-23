@@ -8,7 +8,7 @@ namespace ExamCountdown.Pages
     public partial class Index
     {
         [Inject]
-        public ISyncLocalStorageService LocalStorage { get; set; }
+        public ISyncLocalStorageService LocalStorage { get; set; } = null!;
 
         [Inject]
         public INavigationService NavigationService { get; set; } = null!;

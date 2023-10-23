@@ -16,7 +16,7 @@ else
                 <ValidationMessage For="@(() => Exam.Subject)" />
             </div>
             <div id="subtitle-container" class="centred-contianer">
-                <MatStringField Label="Subheading" @bind-Value="Exam.Subheading" />
+                <MatStringField Label="Subheading"  @bind-Value="Exam.Subheading" />
             </div>
             <div class="button-colour centred-contianer">
                 <MatButton type="button" Class="@Exam.Colour.ToString()" OnClick="OpenColourDialog" Unelevated="true">Change Colour</MatButton>
