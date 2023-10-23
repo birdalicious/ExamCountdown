@@ -22,8 +22,8 @@ else
                 <MatButton type="button" Class="@Exam.Colour.ToString()" OnClick="OpenColourDialog" Unelevated="true">Change Colour</MatButton>
             </div>
         </div>
-            <div id="startDateTime-container" @onclick="OpenCalendarDialog">
-            @Exam.StartDateTime
+            <div id="startDateTime-container" class="@Exam.Colour" @onclick="OpenCalendarDialog">
+                @Exam.StartDateTime.ToString("ddd dd MMMM yyyy h:mm tt")
         </div>
     </EditForm>
 </div>
