@@ -1,0 +1,21 @@
+﻿@code {
+    [Inject]
+    public DialogService DialogService { get; set; } = null!;
+
+    [Parameter]
+    public DateTime Value { get; set; }
+
+    [Parameter]
+    public EventCallback<DateTime> ValueChanged { get; set; }
+
+    public Task ShowDialog()
+    {
+        return DialogService.OpenAsync("Selecte Date & Time", ds =>
+            @<div id="root">
+                <RadzenDatePicker @bind-Value:get="@Value" @bind-Value:set="@ValueChanged" Inline="true" ShowTime="true" ShowTimeOkButton="false" Min="@DateTime.Today"/>
+                <div class="rz-p-12 rz-text-align-center">
+                    <RadzenButton Text="Ok" Click="() => ds.Close(true)" />
+                </div>
+            </div>);
+    }
+}

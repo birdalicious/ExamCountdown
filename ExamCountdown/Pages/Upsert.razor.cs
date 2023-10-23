@@ -18,13 +18,17 @@ namespace ExamCountdown.Pages
         public INavigationService NavigationService { get; set; } = null!;
         public Exam? Exam { get; set; }
 
-        private ColoursComponent _colourDialog { get; set; } = null!;
+        private ColoursComponent _colourDialog = null!;
+
+        private CalendarComponent _calendarDialog = null!;
 
         protected override void OnInitialized()
         {
             if (NavigationService.RelativeUri == "add")
             {
-                Exam = new Exam("", "", DateTime.Now, TimeSpan.FromHours(1));
+                var now = DateTime.Now;
+                now = now.AddSeconds(-now.Second);
+                Exam = new Exam("", "", now, TimeSpan.FromHours(1));
             }
             else
             {
@@ -35,6 +39,11 @@ namespace ExamCountdown.Pages
         private Task OpenColourDialog()
         {
             return _colourDialog.ShowDialog();
+        }
+
+        private Task OpenCalendarDialog()
+        {
+            return _calendarDialog.ShowDialog();
         }
 
         public void HandleOnValidSubmit()

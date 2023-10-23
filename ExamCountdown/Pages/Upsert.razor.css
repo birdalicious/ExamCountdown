@@ -16,5 +16,14 @@
     flex-direction: column;
     justify-content: center;
 
-    background-color: var(--exam-background);
+    background-color: var(--primary);
+}
+
+.button-colour ::deep button {
+    background-color: var(--primary);
+    color: var(--primary-colour);
+}
+
+.centred-contianer {
+    padding: 1em 0;
 }
