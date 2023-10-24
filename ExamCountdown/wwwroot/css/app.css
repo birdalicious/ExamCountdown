@@ -10,7 +10,7 @@ html, body {
 }
 
 #app-bar {
-    background-color: #E0E0E0;
+    background-color: #EEEEEE;
     color: #212121;
 }
 
@@ -179,4 +179,14 @@ a, .btn-link {
 .timetill-largenumber {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-button {
+    width: 100%;
+    padding: 2em 1em;
 }

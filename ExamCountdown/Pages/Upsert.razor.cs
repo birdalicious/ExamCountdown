@@ -16,6 +16,8 @@ namespace ExamCountdown.Pages
 
         [Inject]
         public INavigationService NavigationService { get; set; } = null!;
+
+        public bool IsEditPage => NavigationService.RelativeUri != "add";
         public Exam? Exam { get; set; }
 
         private ColoursComponent _colourDialog = null!;
@@ -26,9 +28,8 @@ namespace ExamCountdown.Pages
         {
             if (NavigationService.RelativeUri == "add")
             {
-                var now = DateTime.Now;
-                now = now.AddSeconds(-now.Second);
-                Exam = new Exam("", "", now, TimeSpan.FromHours(1));
+                var startDate = new DateTime(DateTime.Today.AddDays(1).AddHours(9).Ticks);
+                Exam = new Exam("", "", startDate, TimeSpan.FromHours(1));
             }
             else
             {

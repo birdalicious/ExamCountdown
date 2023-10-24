@@ -22,8 +22,20 @@ else
                 <MatButton type="button" Class="@Exam.Colour.ToString()" OnClick="OpenColourDialog" Unelevated="true">Change Colour</MatButton>
             </div>
         </div>
-            <div id="startDateTime-container" class="@Exam.Colour" @onclick="OpenCalendarDialog">
-                @Exam.StartDateTime.ToString("ddd dd MMMM yyyy h:mm tt")
+        <div id="startDateTime-container" class="@Exam.Colour" @onclick="OpenCalendarDialog">
+            @Exam.StartDateTime.ToString("ddd dd MMMM yyyy h:mm tt")
+            <ValidationMessage For="@(() => Exam.StartDateTime)" />
+        </div>
+        <div class="footer-buttons">
+            @if (IsEditPage)
+            {
+                <MatButton Outlined="true" Class="footer-button">
+                    <MatIcon Icon="delete" />
+                </MatButton>
+            }
+            <MatButton Outlined="true" Class="footer-button">
+                <MatIcon Icon="done" />
+            </MatButton>
         </div>
     </EditForm>
 </div>

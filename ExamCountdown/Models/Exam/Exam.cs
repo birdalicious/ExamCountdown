@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace ExamCountdown.Models.Exam
 {
-    public class Exam
+    public class Exam : IValidatableObject
     {
         public Guid Id { get; set; } = new Guid();
 
@@ -34,7 +34,7 @@ namespace ExamCountdown.Models.Exam
 
         public Exam() {
             Subject = string.Empty;
-            Subheading = string.Empty; ;
+            Subheading = string.Empty;
         }
 
         public Exam(string subject, string module, DateTime startDateTime, TimeSpan duration, Colour colour = Colour.None)
@@ -44,6 +44,20 @@ namespace ExamCountdown.Models.Exam
             StartDateTime = startDateTime;
             Duration = duration;
             Colour = colour;
+        }
+
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            var results = new List<ValidationResult>();
+
+            if(StartDateTime < DateTime.Now)
+            {
+                results.Add(new ValidationResult(
+                    "Start date and time must be in the future",
+                    new List<string>() { "StartDateTime" }));
+            }
+
+            return results;
         }
     }
 }
