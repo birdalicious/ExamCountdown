@@ -49,12 +49,15 @@ namespace ExamCountdown.Pages
 
         public void HandleOnValidSubmit()
         {
-            var exams = LocalStorage.GetItem<List<Exam>>("Exams") ?? new();
-            exams.Add(Exam!);
-            exams = exams.OrderBy(e => e.StartDateTime).ToList();
-            LocalStorage.SetItem("Exams", exams);
+            if (!IsEditPage) //Add page
+            {
+                var exams = LocalStorage.GetItem<List<Exam>>("Exams") ?? new();
+                exams.Add(Exam!);
+                exams = exams.OrderBy(e => e.StartDateTime).ToList();
+                LocalStorage.SetItem("Exams", exams);
 
-            NavigationService.NavigateBack();
+                NavigationService.NavigateBack();
+            }
         }
     }
 }

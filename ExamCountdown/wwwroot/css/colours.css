@@ -11,9 +11,9 @@
 
 .Red {
     --primary: #F44336;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #D32F2F;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #EF9A9A;
     --tertiary-colour: black;
     --darkest: #B71C1C;
@@ -22,9 +22,9 @@
 
 .Pink {
     --primary: #E91E63;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #C2185B;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #F48FB1;
     --tertiary-colour: black;
     --darkest: #880E4F;
@@ -33,9 +33,9 @@
 
 .Purple {
     --primary: #9C27B0;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #7B1FA2;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #CE93D8;
     --tertiary-colour: black;
     --darkest: #4A148C;
@@ -44,9 +44,9 @@
 
 .DeepPurple {
     --primary: #673AB7;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #512DA8;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #B39DDB;
     --tertiary-colour: black;
     --darkest: #311B92;
@@ -55,9 +55,9 @@
 
 .Indigo {
     --primary: #3F51B5;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #303F9F;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #9FA8DA;
     --tertiary-colour: black;
     --darkest: #1A237E;
@@ -66,9 +66,9 @@
 
 .Blue {
     --primary: #2196F3;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #1976D2;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #90CAF9;
     --tertiary-colour: black;
     --darkest: #0D47A1;
@@ -77,9 +77,9 @@
 
 .LightBlue {
     --primary: #03A9F4;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #0288D1;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #81D4FA;
     --tertiary-colour: black;
     --darkest: #01579B;
@@ -88,9 +88,9 @@
 
 .Cyan {
     --primary: #00BCD4;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #0097A7;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #80DEEA;
     --tertiary-colour: black;
     --darkest: #006064;
@@ -99,9 +99,9 @@
 
 .Teal {
     --primary: #009688;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #00796B;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #80CBC4;
     --tertiary-colour: black;
     --darkest: #004D40;
@@ -110,9 +110,9 @@
 
 .Green {
     --primary: #4CAF50;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #388E3C;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #A5D6A7;
     --tertiary-colour: black;
     --darkest: #1B5E20;
@@ -121,9 +121,9 @@
 
 .LightGreen {
     --primary: #8BC34A;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #689F38;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #C5E1A5;
     --tertiary-colour: black;
     --darkest: #33691E;
@@ -132,9 +132,9 @@
 
 .Lime {
     --primary: #CDDC39;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #AFB42B;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #E6EE9C;
     --tertiary-colour: black;
     --darkest: #827717;
@@ -143,9 +143,9 @@
 
 .Yellow {
     --primary: #FFEB3B;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #FBC02D;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #FFF59D;
     --tertiary-colour: black;
     --darkest: #F57F17;
@@ -154,9 +154,9 @@
 
 .Amber {
     --primary: #FFC107;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #FFA000;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #FFE082;
     --tertiary-colour: black;
     --darkest: #FF6F00;
@@ -165,9 +165,9 @@
 
 .Orange {
     --primary: #FF9800;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #F57C00;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #F57C00;
     --tertiary-colour: black;
     --darkest: #E65100;
@@ -176,9 +176,9 @@
 
 .DeepOrange {
     --primary: #FF5722;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #E64A19;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #FFAB91;
     --tertiary-colour: black;
     --darkest: #BF360C;
@@ -187,9 +187,9 @@
 
 .Brown {
     --primary: #795548;
-    --primary-colour: white;
+    --primary-colour: #EEEEEE;
     --secondary: #5D4037;
-    --secondary-colour: white;
+    --secondary-colour: #EEEEEE;
     --tertiary: #BCAAA4;
     --tertiary-colour: black;
     --darkest: #3E2723;

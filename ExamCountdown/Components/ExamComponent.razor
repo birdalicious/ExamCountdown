@@ -1,11 +1,11 @@
 ﻿<div class="exam-listitem-date @Exam.Colour" @onclick=@OnClick>
     <DateComponent DateTime=@Exam.StartDateTime />
 </div>
-<div class="exam-listitem-mainbody @Exam.Colour">
+<div class="exam-listitem-mainbody @Exam.Colour" @onclick=@OnClick>
     <div class="exam-mainbody-heading">@Exam.Subject</div>
     <div class="exam-mainbody-subheading">@Exam.Subheading</div>
 </div>
-<div class="exam-listitem-end @Exam.Colour">
+<div class="exam-listitem-end @Exam.Colour" @onclick=@OnClick>
     <TimeTillComponent TimeTill=@Exam.TimeTillStart />
 </div>
 

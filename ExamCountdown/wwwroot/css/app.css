@@ -132,9 +132,11 @@ a, .btn-link {
 .exam-listitem-date {
     padding: .5em 1em;
     background-color: var(--primary);
+    color: var(--primary-colour);
 }
 .exam-listitem-mainbody {
     background-color: var(--primary);
+    color: var(--primary-colour);
     padding: .5em 1em;
     display: flex;
     flex-direction: column;
@@ -145,10 +147,10 @@ a, .btn-link {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align:center;
-
+    text-align: center;
     padding: 1em 1em;
-    background-color: var(--primary);
+    background-color: var(--secondary);
+    color: var(--secondary-colour);
 }
 
 .date-display {
