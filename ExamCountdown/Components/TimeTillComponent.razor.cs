@@ -2,15 +2,13 @@
 
 namespace ExamCountdown.Components
 {
-    public partial class TimeTillComponent : IDisposable
+    public partial class TimeTillComponent
     {
         [Parameter]
         public TimeSpan TimeTill { get; set; }
 
         public int HeaderNumber { get; private set; } = 0;
         public string Units { get; private set; } = "Days";
-
-        private static Timer? _timer;
 
         private (int, string) CalculateTime()
         {
@@ -30,20 +28,6 @@ namespace ExamCountdown.Components
             {
                 return ((int)TimeTill.TotalSeconds, "Seconds");
             }
-        }
-
-        protected override void OnInitialized()
-        {
-            _timer = new Timer((_) =>
-            {
-                InvokeAsync(() => StateHasChanged());
-            }, null, 0, 1000);
-            base.OnInitialized();
-        }
-
-        public void Dispose()
-        {
-            _timer?.Dispose();
         }
     }
 }
